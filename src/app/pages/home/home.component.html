@@ -1,3 +1,17 @@
 <div class="home___container">
+  <div *ngIf="!paginaInicial">
   <app-quizz></app-quizz>
+  </div>
+
+  <div *ngIf="paginaInicial"  class="pagina-inicio">
+    <h1>Herói ou Vilão?</h1>
+    <div class="separator">
+      <div class="linha"></div>
+      <p>QUIZ</p>
+      <div class="linha"></div>
+    </div>
+
+    <button (click)="ifPaginaQuiz()" > Começar </button>
+  </div>
+
 </div>

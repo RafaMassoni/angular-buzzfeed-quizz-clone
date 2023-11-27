@@ -25,20 +25,25 @@ export class QuizzComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.restart();
+  }
+
+  restart()
+  {
     if(quizz_questions){
       this.finished = false
       this.title = quizz_questions.title
 
+
+      this.questionIndex = 0
+
+
       this.questions = quizz_questions.questions
       this.questionSelected = this.questions[this.questionIndex]
 
-      this.questionIndex = 0
       this.questionMaxIndex = this.questions.length
 
-      console.log(this.questionIndex)
-      console.log(this.questionMaxIndex)
     }
-
   }
 
   playerChoose(value:string){

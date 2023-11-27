@@ -1,0 +1,62 @@
+.home___container{
+}
+
+.pagina-inicio {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.pagina-inicio h1 {
+  font-size: 80px;
+}
+
+
+.pagina-inicio button{
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f5b84d;
+  font-weight: bold;
+  width: 40%;
+
+  color: #3E2723;
+  font-size: 30px;
+  font-family: "Book Antiqua",  serif;
+}
+
+.pagina-inicio button:hover{
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #F29E00;
+  font-weight: bold;
+  width: 40%;
+}
+
+
+
+.separator{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  width: 40%;
+}
+
+.separator .linha{
+  height: 4px;
+  background-color: #f5b84d;
+  flex: 1;
+}
+
+.separator p{
+  flex: 0 1 80px;
+  font-size: 20px;
+  font-family: "Century Gothic", serif;
+}
+
